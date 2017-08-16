@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Albert Yu</a>
+      <nav>
+        <a href="index.html" class="About">About</a>
+        <a href="portfolio.html" class="Portfolio">Portfolio</a>
+        <a href="contact.html" class="Contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/albertyu1027"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/albert-yu-pmp-71a52220/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/8286613/user8286613">   <img src="http://www.iconsdb.com/icons/preview/orange/stackoverflow-4-xxl.png" alt="Stackoverflow" width="60px" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Albert Yu
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<style>
+
+@media screen and (max-width: 980px) {
+    .container {
+        width:80%;
+  }
+  
+    .main-section{
+        width:60%;
+  }
+
+  }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width:95%;
+    }
+
+    .main-section{
+        width:100%;
+        max-width:730px;
+    }
+    
+    .sidebar {
+        width:100%;
+        max-width:730px;
+    }
+
+
+    }
+
+@media screen and (max-width: 640px) {
+
+    header {
+      position:static;
+    }
+
+    #logo {
+        width:100%;
+        max-width: 640px;
+        font-size:50px;
+    }
+
+    nav {
+        width:100%;
+        margin: 10px;
+        max-width: 640px;
+        font-size:30px;
+        text-align: center;
+    }
+
+    .main-section {
+        margin-top:30px;
+        max-width:600px;
+    }
+
+    .sidebar {
+        width:100%;
+        max-width:600px;
+        float:left;
+
+    }
+
+    .About {
+        width:25%;
+    }
+
+    .Portfolio {
+        width:25%;
+    }
+
+    .Contact{
+        width:25%;
+    }
+}
+
+</style>
